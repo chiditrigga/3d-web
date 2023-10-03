@@ -11,14 +11,29 @@ body{
   height: 60px;
   border-radius: 50%;
   background: red;
+  color: white;
+  font-weight: 400;
+
 }
 
+
+
 .btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+ 
+ 
 }
+
+
+
+
 
 button{
   padding: 20px;
+  font-weight: 800 !important;
+  border-radius: 30px !important;
+  
 }
+
