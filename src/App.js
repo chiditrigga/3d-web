@@ -25,34 +25,42 @@ function App() {
 <div className='btn '>
 
 
-<button onMouseLeave={()=> {setAnimate(!animate) 
+<motion.button onMouseLeave={()=> {setAnimate(!animate) 
       setLocay("60vh")
      setPickColor("red")
      setLoca(0) 
     
     }
-   } onMouseEnter={ ()=> {setAnimate(!animate) 
+   } whileHover={{
+    scale:1.1
+  }} onMouseEnter={ ()=> {setAnimate(!animate) 
      setLocay("5vh")
      setPickColor("black")
      setLoca("15vw") 
      
      
-  }} onClick={ ()=> setBg("black")}>set background color</button> 
+  }} whileTap={{
+    scale:0.9
+  }} onClick={ ()=> setBg("black")}>set background color to</motion.button> 
   
-  <button  onMouseLeave={ ()=> {setAnimate(!animate) 
+  <motion.button  onMouseLeave={ ()=> {setAnimate(!animate) 
    setLocay("60vh") 
    setLoca(0) 
    setPickColor("red")
  
-} } onMouseEnter={ ()=> {setAnimate(!animate) 
+} } whileHover={{
+  scale:1.1
+}} onMouseEnter={ ()=> {setAnimate(!animate) 
      setLocay("5vh")
      setLoca("47vw")
      setPickColor("#FFFF00")
     
 
-  }} onClick={ ()=> setBg("#FFFF00")}>set background color</button>
+  }}  whileTap={{
+    scale:0.9
+  }} onClick={ ()=> setBg("#FFFF00")}>set background color to</motion.button>
   
-  <button onMouseLeave={()=> {setAnimate(!animate) 
+  <motion.button  onMouseLeave={()=> {setAnimate(!animate) 
       setLocay("60vh")
      setPickColor("red")
      setLoca(0) 
@@ -64,7 +72,11 @@ function App() {
      setLoca("82vw") 
     
      
-  }}   onClick={ ()=> setBg("#2196F3")}>set background color</button>
+  }}   whileTap={{
+    scale:0.9
+  }}  whileHover={{
+    scale:1.1
+  }} onClick={ ()=> setBg("#2196F3")}>set background color to</motion.button>
    
    </div>
 
