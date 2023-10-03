@@ -53,7 +53,7 @@ function App() {
 }} onMouseEnter={ ()=> {setAnimate(!animate) 
      setLocay("5vh")
      setLoca("47vw")
-     setPickColor("#FFFF00")
+     setPickColor("yellow")
     
 
   }}  whileTap={{
@@ -68,7 +68,7 @@ function App() {
     }
    } onMouseEnter={ ()=> {setAnimate(!animate) 
      setLocay("5vh")
-     setPickColor("#2196F3")
+     setPickColor("blue")
      setLoca("82vw") 
     
      
@@ -92,7 +92,7 @@ function App() {
    type:"spring",
    stiffness:70
    }} >
-        
+        {pickColor}
    </motion.div>
    
      
